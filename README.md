@@ -2,10 +2,7 @@
 
 [![MIT License][license-shield]][license-url]
 
-
-
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
 <h3 align="center">The koda.life website</h3>
   <p align="center">
