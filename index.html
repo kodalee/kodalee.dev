@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="kodalee, koda, lee, allen, kodaleeallen, kodaallen" />
-	<meta name="author" content="kodalee.dev" />
+	<meta name="author" content="koda.life" />
 
 	<meta property="og:title" content="Koda Lee | My Profile"/>
 	<meta property="og:site_name" content="Koda Lee"/>
@@ -26,6 +26,99 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<style>
+		#klee-header {
+			background-position: center;
+		}
+		.mouse-parallax {
+			transition: .1s;
+		}
+		.scroll-watch {
+			background-color: black;
+			position: fixed;
+			width: 141px;
+			height: 27px;
+			color: white;
+			z-index: 1;
+			padding-left: 20px;
+			right: 0;
+			transition: 0.2s opacity, .2s background-color, .2s color, 0.2s width;
+			white-space: nowrap;
+		}
+		.headsup-tip {
+			top: var(--cursorY);
+			left: var(--cursorX);
+			position: fixed;
+			background-color: black;
+			color: white;
+			width: fit-content;
+			height: 46px;
+			z-index: 1;
+			padding: 10px;
+			opacity: 0;
+			pointer-events: none;
+		}
+		.timeline-badge, .timeline-panel, .hoverwidth, .services-padding .icon {
+			transition: 0.2s;
+		}
+		.timeline-panel:hover, .timeline-badge:hover ~ .timeline-panel {
+			transform: scale(1.05);
+		}
+		.timeline-badge:hover, .services-padding .icon:hover {
+			transform: scale(1.5);
+		}
+		li:hover .first-block {
+			color: rgba(0, 0, 0, 0.5);
+			font-weight: normal;
+		}
+		li:hover .second-block {
+			color: black;
+			font-weight: bolder;
+		}
+
+		.quick-nav h4 {
+			font-size: 10px;
+			transition: .1s;
+		}
+		.quick-nav h4, .quick-nav a, .quick-nav {
+			color: white;
+			transition: .1s;
+		}
+		.quick-nav:hover {
+			padding: 20px;
+		}
+		.quick-nav:hover > h4 {
+			font-size: initial;
+		}
+		.quick-nav:hover > ul {
+			font-size: initial;
+		}
+		.quick-nav ul {
+			margin-bottom: 0;
+			font-size: 0;
+			transition: .2s;
+		}
+		.quick-nav {
+			padding: 5px;
+			transition: .1s;
+			position: fixed;
+			z-index: 1;
+			background-color: black;
+			top: 2%;
+			left: 2%;
+		}
+		.fake-terminal {
+			background: black;
+			color: white;
+			width: 700px;
+			height: 400px;
+			padding: 10px;
+			position: fixed;
+			z-index: 1;
+			bottom: 0;
+		}
+	</style>
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 
@@ -39,21 +132,38 @@
 	<body>
 		
 	<div class="klee-loader"></div>
-	
+	<!-- <div class="fake-terminal">
+		<div class="terminal-input">guest@koda.life:~/home/koda$ </div>
+	</div> -->
+
 	<div id="page">	
-	<header id="klee-header" class="klee-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="quick-nav">
+			<h4 style="margin-bottom: 0px;">Quick Nav</h4>
+			<ul>
+				<li><a href="#klee-header">Links</a></li>
+				<li><a href="#klee-about">About Me</a></li>
+				<li><a href="#klee-resume">My Resume</a></li>
+				<li><a href="#klee-features">My Services</a></li>
+				<li><a href="#klee-skill">Skills</a></li>
+				<li><a href="#klee-work">Projects & Contact</a></li>
+			</ul>
+		</div>
+		<div class="scroll-watch"></div>
+		<div class="headsup-tip">This is an empty box!</div>
+	<header id="klee-header" class="klee-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" >
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
+					<div class="display-t js-fullheight mouse-parallax">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/me.png);"></div>
+							<div class="profile-thumb" style="background: url(images/me.png);">
+							</div>
 							<h1><span>Koda Lee Allen</span></h1>
-							<h3><span>Full-Stack Developer</span></h3>
+							<h3><span>Web Designer & Developer | Aspiring Software Engineer &amp; Computer Engineer</span></h3>
 							<p>
 								<ul class="klee-social-icons">
-									<li><a href="https://github.com/hellokoda?utm_medium=referral&utm_source=kodalee.dev" title="GitHub | hellokoda"><i class="icon-github2"></i></a></li>
+									<li><a href="https://github.com/hellokoda?utm_medium=referral&utm_source=koda.life" title="GitHub | hellokoda" class="account-github">GitHub</a> | <a class="account-twitter" href="https://twitter.com/kodalee4?utm_medium=referral&utm_source=koda.life" title="Twitter | kodalee4">Twitter</a></li>
 								</ul>
 							</p>
 						</div>
@@ -75,26 +185,26 @@
 					<ul class="info">
 						<li>
 							<span class="first-block">Email:</span>
-							<span class="second-block">me@kodalee.dev</span>
+							<span class="second-block">me@koda.life</span>
 						</li>
 						<li>
 							<span class="first-block">Website:</span>
-							<span class="second-block">www.kodalee.dev</span>
+							<span class="second-block">www.koda.life</span>
 						</li>
 						<li>
 							<span class="first-block">Age &amp; Education:</span>
-							<span class="second-block">17 Years Old <br/> High School Junior (11th Grade)</span>
+							<span class="second-block">18 Years &amp; a High School graduate</span>
 						</li>
 					</ul>
 				</div>
 				<div class="col-md-8">
 					<h2>Koda Lee Allen</h2>
-					<p>I'm an avid programming puzzle-seeker, on a real note; I'm a High School student &amp; teacher's aid for CTE Game Design in my Junior year (11th Grade) with a Certificate of Completion in CTE Web Design/Development (June 2020) &amp; a partial completion in CTE Game Design/Development (June 2019). My personal life is compiled of work, family and school with a mix of hobbies such as playing computer games and dedicating my free time to private, public or community project creation and development. </p>
-					<p>I've been apart of or have led a good amount of projects; one of my recent projects was a website and newsletter system that was created by me for my High School's <a href="https://www.keyclub.org/about?utm_medium=referral&utm_source=kodalee.dev" target="_blank" title="What is Key Club?">Key Club</a> Charter. I'm typically available for freelancing most of the time; if it is a non-profit &amp; for good cause, I'm glad to volunteer my experience into any development it would need.</p>
-					<p>Here's a life story: I've been on the computer since 2007 (approx. 3 years old) and I gained knowledge about how computers work and throughout my time in elementary and middle school, I would impress my teachers, parents &amp; friends after showing them something they didn't know about on the computer, I was then further led into development after my 6th science teacher which who was also a robotics elective teacher using <a href="https://education.lego.com/en-us" target="_blank">LEGO's STEM</a> noticed that I had been playing around with <a href="https://developer.chrome.com/docs/devtools/" target="_blank">Chrome's "DevTools" (specifically the Inspect Element window)</a> and <a href="https://scratch.mit.edu" target="_blank">Scratch</a>; he would then persuade my parents into putting me into said robotics class, which had me interested at the time, and the rest is history. I can now say without a doubt that computer programming &amp; development is a passion to me and has been an important part of my life ever since I started learning HTML and JavaScript in the 7th grade. </p>
+					<p>I'm an avid programming puzzle-seeker, on a real note; I'm a freelancing software developer. In high school, I was a teacher's aid for CTE Game and Web design with a Certificate of Completion in CTE Web Design/Development (June 2020) &amp; a partial completion in CTE Game Design/Development (June 2019). My personal life is compiled of work, family and school with a mix of hobbies such as playing computer games and dedicating my free time to private, public or community project creation and development. </p>
+					<p>I've been apart of or have led a good amount of projects; one of my recent projects was a website and newsletter system that was created by me for my High School's <a class="hover-kclub" href="https://www.keyclub.org/about?utm_medium=referral&utm_source=koda.life" target="_blank">Key Club</a> Charter. I'm typically available for freelancing most of the time; if it is a non-profit &amp; for good cause, I'm glad to volunteer my experience into any development it would need.</p>
+					<p>Here's a life story: I've been on the computer since 2007 (approx. 3 years old) and I gained knowledge about how computers work and throughout my time in elementary and middle school, I would impress my teachers, parents &amp; friends after showing them something they didn't know about on the computer, I was then further led into development after my 6th science teacher which who was also a robotics elective teacher using <a href="https://education.lego.com/en-us" class="hover-stem" target="_blank">LEGO's STEM</a> noticed that I had been playing around with <a class="hover-devt" href="https://developer.chrome.com/docs/devtools/" target="_blank">Chrome's "DevTools" (specifically the Inspect Element window)</a> and <a class="hover-scrt" href="https://scratch.mit.edu" target="_blank">Scratch</a>; he would then persuade my parents into putting me into said robotics class, which had me interested at the time, and the rest is history. I can now say without a doubt that computer programming &amp; development is a passion to me and has been an important part of my life ever since I started learning HTML and JavaScript in the 7th grade. </p>
 					<p>
 						<ul class="klee-social-icons">
-							<li><a href="https://github.com/hellokoda?utm_medium=referral&utm_source=kodalee.dev" title="GitHub | hellokoda"><i class="icon-github2"></i></a></li>
+							<li><a account="github" href="https://github.com/hellokoda?utm_medium=referral&utm_source=koda.life" title="GitHub | hellokoda"><i class="icon-github2"></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -113,7 +223,7 @@
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline">
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work / Other Experience</h3></div>
+							<div><h3 class="hoverwidth">Work / Other Experience</h3></div>
 						</li>
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
@@ -140,24 +250,24 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Lead Developer</h3>
-									<span class="company">Community Service - Golden Eagle Charter's Key Club - 2021 - Current</span>
+									<span class="company">Community Service - My School - 2021 - Current</span>
 								</div>
 								<div class="timeline-body">
-									<p>I created a school-approved website for the our Key Club to help us promote our cause and exclaim on our efforts to support our local communities by doing charitible volunteer work which in turn helps us provide service, build character, gain leadership skills and overall make the world a better place.</p>
-									<p>You may view said work <a href="https://gecskeyclub.org">here: www.gecskeyclub.org</a> </p>
+									<p>I created a school-approved website for Key Club to help us promote our cause and exclaim on our efforts to support our local communities by doing charitible volunteer work which in turn helps us provide service, build character, gain leadership skills and overall make the world a better place.</p>
+									<p>To prevent harassment, you must contact me via email to retrieve this work sample.</p>
 								</div>
 							</div>
 						</li>
 						<br>
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
+							<div><h3 class="hoverwidth">Education</h3></div>
 						</li>
 						<li class="timeline-inverted animate-box">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">CTE Web Design</h3>
-									<span class="company">Golden Eagle Charter - 2020 - Completed</span>
+									<span class="company">My School - 2020 - Completed</span>
 								</div>
 								<div class="timeline-body">
 									<p></p>
@@ -169,7 +279,7 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">CTE Game Design</h3>
-									<span class="company">Golden Eagle Charter - 2019 - Partial</span>
+									<span class="company">My School - 2019 - Partial</span>
 								</div>
 								<div class="timeline-body">
 									<p></p>
@@ -221,7 +331,7 @@
 							<span class="icon">
 								<i class="icon-database"></i>
 							</span>
-							<div class="feature-copy">
+							<div class="feature-copy" id='klee-skill'>
 								<h3>Database Management</h3>
 								<p>I have experience with multiple database systems, the top 2 being MariaDB (SQL) and MongoDB (JSON-oriented).</p>
 							</div>
@@ -229,12 +339,11 @@
 					</div>
 				</div>
 
-
 			</div>
 		</div>
 	</div>
 
-	<div id="klee-skills" class="animate-box">
+	<div class="animate-box" id="klee-skills">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center klee-heading">
@@ -244,7 +353,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="progress-wrap">
-						<h3><span class="name-left">HTML</span><span class="value-right">100%</span></h3>
+						<h3><span class="name-left">HTML</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
 						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:100%">
@@ -252,7 +361,7 @@
 						</div>
 					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">JavaScript</span><span class="value-right">100%</span></h3>
+						<h3><span class="name-left">JavaScript</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
 						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:100%">
@@ -260,7 +369,7 @@
 						</div>
 					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">CSS</span><span class="value-right">100%</span></h3>
+						<h3><span class="name-left">CSS</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
 						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:100%">
@@ -268,44 +377,44 @@
 						</div>
 					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">PHP</span><span class="value-right">95%</span></h3>
+						<h3><span class="name-left">PHP</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:100%">
 						  </div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="progress-wrap">
-						<h3><span class="name-left">Java</span><span class="value-right">77%</span></h3>
+						<h3><span class="name-left">Java</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:77%">
+						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
 						  </div>
 						</div>
 					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">Python</span><span class="value-right">25%</span></h3>
+						<h3><span class="name-left">Python</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%">
 						  </div>
 						</div>
 					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">NodeJS</span><span class="value-right">92%</span></h3>
+						<h3><span class="name-left">NodeJS</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:92%">
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:100%">
 						  </div>
 						</div>
 					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">jQuery</span><span class="value-right">99%</span></h3>
+						<h3><span class="name-left">jQuery</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:99%">
+						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:100%">
 						  </div>
 						</div>
 					</div>
@@ -322,15 +431,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 text-center col-padding animate-box">
-					<a href="https://gecskeyclub.org" class="work" style="background-image: url(https://i.kodalee.dev/057b8571.jpg);">
-						<div class="desc">
-							<h3>GECS Key Club</h3>
-							<span>Website | Preview</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center col-padding animate-box">
+				<div class="col-md-6 text-center col-padding animate-box">
 					<a href="https://github.com/hellokoda" class="work" style="background-image: url(https://miro.medium.com/max/719/0*kHdpA0lO-qQVbaXq.png);">
 						<div class="desc">
 							<h3>My Github Page</h3>
@@ -338,8 +439,8 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4 text-center col-padding animate-box">
-					<a href="https://github.com/hellokoda/7SegLongestWordFinder" class="work" style="background-image: url(https://i.kodalee.dev/1a5cb87c.jpg);">
+				<div class="col-md-6 text-center col-padding animate-box">
+					<a href="https://github.com/hellokoda/7SegLongestWordFinder" class="work" style="background-image: url(https://i.koda.life/1a5cb87c.jpg);">
 						<div class="desc">
 							<h3>7SegLongestWordFinder</h3>
 							<span>Fun Project | Preview</span>
@@ -357,7 +458,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center klee-heading">
 					<h2>Need to contact me?</h2>
 					<p>Well I would like to inform you that my inbox is more than open and ready for you! Shoot an email over, even if its a general inquiry</p>
-					<p class="text-primary">me@kodalee.dev</p>
+					<p class="text-primary">me@koda.life</p>
 				</div>
 			</div>
 		</div>
@@ -367,7 +468,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p>Copyright &copy; 2022 Koda Lee Allen. All Rights Reserved. <br>Icomoon, Bootstrap | <a href="https://github.com/hellokoda/kodalee.dev" target="_blank">View the source for this website</a></p>
+					<p>Copyright &copy; 2022 Koda Lee Allen. All Rights Reserved. <br>Icomoon, Bootstrap | <a href="https://github.com/hellokoda/koda.life" target="_blank" class="site-source">View the source for this website</a></p>
 				</div>
 			</div>
 		</div>
@@ -393,6 +494,14 @@
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script>
+		$(document).scroll(e => {
+			$('#klee-header')[0].style.backgroundSize = `${100+(window.scrollY/50)}%`;
+		})
+
+///		
+	</script>
 
 	</body>
 </html>
