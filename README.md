@@ -122,6 +122,6 @@ Project Link: [https://github.com/hellokoda/kodalee.dev/](https://github.com/hel
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[license-shield]: https://img.shields.io/github/license/hellokoda/kodalee.dev.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/hellokoda/kodalee.dev.svg?style=for-the-badge&
 [license-url]: https://github.com/hellokoda/kodalee.dev/blob/main/LICENSE?
 
