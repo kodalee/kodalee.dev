@@ -4,14 +4,14 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-<h3 align="center">The koda.life website</h3>
+<h3 align="center">The kodalee.dev website</h3>
   <p align="center">
     Just my portfolio and general information about me plastered on webpage
     <br />
-    <a href="https://koda.life"><strong>See it for yourself »</strong></a>
+    <a href="https://kodalee.dev"><strong>See it for yourself »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/hellokoda/koda.life/fork">Fork this repository</a>
+    <a href="https://github.com/hellokoda/kodalee.dev/fork">Fork this repository</a>
 </div>
 
 
@@ -80,7 +80,7 @@ Assuming you are self-hosting on Linux or using the command prompt on Windows, f
 1. Find your servers website root
 2. Clone the repo
    ```sh
-   git clone https://github.com/hellokoda/koda.life.git
+   git clone https://github.com/hellokoda/kodalee.dev.git
    ```
 3. Check to see if your page is working
    ```sh
@@ -113,15 +113,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Koda Lee Allen - [koda.life](https://koda.life) - me@koda.life
+Koda Lee Allen - [kodalee.dev](https://kodalee.dev) - me@kodalee.dev
 
-Project Link: [https://github.com/hellokoda/koda.life/](https://github.com/hellokoda/koda.life/)
+Project Link: [https://github.com/hellokoda/kodalee.dev/](https://github.com/hellokoda/kodalee.dev/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[license-shield]: https://img.shields.io/github/license/hellokoda/koda.life.svg?style=for-the-badge
-[license-url]: https://github.com/hellokoda/koda.life/blob/main/LICENSE
+[license-shield]: https://img.shields.io/github/license/hellokoda/kodalee.dev.svg?style=for-the-badge
+[license-url]: https://github.com/hellokoda/kodalee.dev/blob/main/LICENSE
 
