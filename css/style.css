@@ -100,8 +100,8 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgb(22,173,223);
-  background: linear-gradient(47deg, rgba(22,173,223,1) 28%, rgba(165,45,253,1) 64%);
+  /* background: rgb(22,173,223);
+  background: linear-gradient(47deg, rgba(22,173,223,1) 28%, rgba(165,45,253,1) 64%); */
 }
 #klee-header .display-t,
 .klee-cover .display-t {
@@ -128,11 +128,11 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 50px;
   line-height: 1.3;
   font-weight: 300;
-  -webkit-transform: rotate(1deg);
-  -moz-transform: rotate(1deg);
-  -ms-transform: rotate(1deg);
-  -o-transform: rotate(1deg);
-  transform: rotate(1deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 #klee-header .display-tc h1 span,
 .klee-cover .display-tc h1 span {
