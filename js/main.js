@@ -1,5 +1,74 @@
 ;(function () {
+	$(".profile-thumb").click(() => {
+		$(".profile-thumb")[0].style.height = "0px";
+		$(".profile-thumb")[0].style.opacity = 0;
+	})
 	
+	
+	window.onmousemove = function(e) {
+		window.mouse = {PosY: e.pageY, PosX: e.pageX}
+		var tipElement = $(".headsup-tip")[0], 
+		pthumb = $(".profile-thumb")[0], 
+		__accountTwitter = $(".account-twitter")[0], 
+		__accountGithub1 = $(".account-github")[0], 
+		__accountGithub2 = $("[account=github]")[0], 
+
+		keyclub = $(".hover-kclub")[0], 
+		legostem = $(".hover-stem")[0], 
+		devtools = $(".hover-devt")[0], 
+		scratch = $(".hover-scrt")[0], 
+
+		siteSourceElement = $(".site-source")[0];
+		tipElement.style.top = `${(((window.mouse.PosY-window.scrollY) / window.innerHeight) * 100)+1}%`
+		tipElement.style.left = `${(((window.mouse.PosX-window.scrollX) / window.innerWidth) * 100)+1}%`
+		tipElement.style.opacity = 0;
+
+		if(e.target == (pthumb)) {
+			tipElement.innerHTML = "Click to hide this ugliness.";
+			tipElement.style.opacity = 1;
+		}
+		if(e.target == (keyclub)) {
+			tipElement.innerHTML = "What is Key Club?";
+			tipElement.style.opacity = 1;
+		}
+		if(e.target == (legostem)) {
+			tipElement.innerHTML = "What is LEGO's STEM?";
+			tipElement.style.opacity = 1;
+		}
+		if(e.target == (devtools)) {
+			tipElement.innerHTML = "Click to view Chrome's DevTools";
+			tipElement.style.opacity = 1;
+		}
+		if(e.target == (scratch)) {
+			tipElement.innerHTML = "Click to visit <a href=''>scratch.mit.edu</a>";
+			tipElement.style.opacity = 1;
+		}
+		if(e.target == (__accountTwitter)) {
+			tipElement.innerHTML = "Visit @kodalee4 on Twitter";
+			tipElement.style.opacity = 1;
+		}
+		if(e.target == (__accountGithub2) || e.target == (__accountGithub1)) {
+			tipElement.innerHTML = "Visit kodalee on Github";
+			tipElement.style.opacity = 1;
+		}
+
+		if(e.target == (siteSourceElement)) {
+			tipElement.innerHTML = "source code at <a href=''>github.com/kodalee/koda.life</a>";
+			tipElement.style.opacity = 1;
+		}
+	}
+
+	window.onscroll = () => {
+		$(".scroll-watch")[0].style.opacity = 1;
+		$(".scroll-watch")[0].style.backgroundColor = "rgba(0,0,0,0.4)";
+		$(".scroll-watch")[0].style.width = "75px";
+		$(".scroll-watch")[0].style.color = "";
+		$(".scroll-watch")[0].style.top = `${(window.scrollY / document.body.scrollHeight) * 100}%`;
+		lol = Date.now();var lol2 = Date.now();
+		setTimeout(() => {if(lol == lol2) {$(".scroll-watch")[0].style.opacity = 0;$(".scroll-watch")[0].style.width = "0px";}}, 1000)
+	
+		$(".scroll-watch")[0].innerHTML = `${Math.floor((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100)}%`
+	}
 	'use strict';
 
 	var isMobile = {
