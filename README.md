@@ -11,7 +11,7 @@
     <a href="https://kodalee.dev"><strong>See it for yourself »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/hellokoda/kodalee.dev/fork">Fork this repository</a>
+    <a href="https://github.com/kodalee/kodalee.dev/fork">Fork this repository</a>
 </div>
 
 
@@ -80,7 +80,7 @@ Assuming you are self-hosting on Linux or using the command prompt on Windows, f
 1. Find your servers website root
 2. Clone the repo
    ```sh
-   git clone https://github.com/hellokoda/kodalee.dev.git
+   git clone https://github.com/kodalee/kodalee.dev.git
    ```
 3. Check to see if your page is working
    ```sh
@@ -115,13 +115,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Koda Lee Allen - [kodalee.dev](https://kodalee.dev) - me@kodalee.dev
 
-Project Link: [https://github.com/hellokoda/kodalee.dev/](https://github.com/hellokoda/kodalee.dev/)
+Project Link: [https://github.com/kodalee/kodalee.dev/](https://github.com/kodalee/kodalee.dev/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[license-shield]: https://img.shields.io/github/license/hellokoda/kodalee.dev.svg?style=for-the-badge&
-[license-url]: https://github.com/hellokoda/kodalee.dev/blob/main/LICENSE?
+[license-shield]: https://img.shields.io/github/license/kodalee/kodalee.dev.svg?style=for-the-badge
+[license-url]: https://github.com/kodalee/kodalee.dev/blob/main/LICENSE?
 
