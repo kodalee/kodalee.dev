@@ -1,5 +1,7 @@
 <div id="top"></div>
 
+No longer in use. kodalee.dev now redirects to this GitHub page.
+
 [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
